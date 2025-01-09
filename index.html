@@ -1,408 +1,444 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nocturne Café</title>
-    <link rel="stylesheet" href="css\style.css">
     <link rel="icon" href="img/Só Logo Sem fundo.png" type="image/png" />
-</head>
-<body>
-    
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./css/shortcode/shortcode.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <!-- OWL Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha384-+6Z2"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-+6Z2"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Modernizr -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      integrity="sha384-+6Z2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="fixed">
-        <div class="header-area ptb-30 header-sticky">
-            <div class="container">
-                <div class="col-md-3 col-xs-12">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-9 col-xs-12">
-                    <div class="content-wrapper">
-                        <div class="main-menu text-right">
-                            <nav>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="menu.html">Menu</a></li>
-                                    <li><a href="contato.html">Contato</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="mobile-menu hidden-lg hidden-md">
-                        <!--Main Menu End-->
-                        <!--Search From Start-->
-                        <div class="search-btn">
-                            <ul data-togglee="dropdow" class="header-search search-toggle">
-                                <li class="search-menu">
-                                    <i class="zmdi zmdi-search"></i>
-                                </li>
-                            </ul>
-                            <div class="search">
-                                <div class="search-form">
-                                    <form action="" id="search-form">
-                                        <input type="search" placeholder="Faça sua busca aqui..." name="search">
-                                        <button type="submit">
-                                            <span><i class="zmdi zmdi-search"></i></span>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Search From End-->
-                    </div>
-                </div>
+      <div class="header-area ptb-30 header-sticky">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <div class="logo">
+                <a href="#">
+                  <img src="img/Café Nocturne logo.png" alt="Nocturne Café" />
+                </a>
+              </div>
             </div>
+            <div class="col-md-9 col-xs-12">
+              <div class="content-wrapper">
+                <div class="main-menu text-right">
+                  <nav>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="menu.html">Menu</a></li>
+                      <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="search-btn">
+                  <ul class="header-search search-toggle">
+                    <li class="search-menu">
+                      <i class="zmdi zmdi-search"></i>
+                    </li>
+                  </ul>
+                  <div class="search">
+                    <div class="search-form">
+                      <form action="" id="search-form">
+                        <input
+                          type="search"
+                          placeholder="Faça sua busca aqui..."
+                          name="search"
+                        />
+                        <button type="submit">
+                          <span><i class="zmdi zmdi-search"></i></span>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-menu hidden-lg hidden-md">
+                <!--Main Menu End-->
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <section class="slider-area">
-        <div class="slider-wrapper">
-            <div class="single-slide">
-                <div class="banner-content">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                                <div class="text-content-wrapper">
-                                    <div class="text-content text-center">
-                                        <h3 class="pt-70">Seja Bem vindo</h3>
-                                        <h1>Nome do Produto</h1>
-                                        <p>Descrição do produto</p>
-                                        <div class="banner-btn">
-                                            <a href="#" class="default-btn">
-                                                <span>Visualizar</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <div class="slider-wrapper">
+        <div
+          class="single-slide"
+          style="background-image: url(img/slider/1.png)"
+        >
+          <div class="banner-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <div class="text-content-wrapper">
+                    <div class="text-content text-center">
+                      <h3 class="pt-70">Seja Bem vindo</h3>
+                      <h1>Nome do Produto</h1>
+                      <p>Descrição do produto</p>
+                      <div class="banner-btn">
+                        <a href="#" class="default-btn">
+                          <span>Visualizar</span>
+                        </a>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <div class="single-slide">
-                <div class="banner-content">
-                    <div class="container">
-                        <div class="row">
-                            <div class="copl-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                                <div class="text-content-wrapper">
-                                    <div class="text-content text-center">
-                                        <h3 class="pt-70">Seja Bem vindo</h3>
-                                        <h1>Nome do Produto 2</h1>
-                                        <p>Descrição do produto 2</p>
-                                        <div class="banner-btn">
-                                            <href="#" class="default-btn">
-                                                <span>Visualizar</span>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <div
+          class="single-slide"
+          style="background-image: url(img/slider/1.png)"
+        >
+          <div class="banner-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <div class="text-content-wrapper">
+                    <div class="text-content text-center">
+                      <h3 class="pt-70">Seja Bem vindo</h3>
+                      <h1>Nome do Produto 2</h1>
+                      <p>Descrição do produto 2</p>
+                      <div class="banner-btn">
+                        <a href="#" class="default-btn">
+                          <span>Visualizar</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="contact-area fix pb-30">
-        <div class="single-contact">
-            <div class="information text-center">
-                <h4><span>Telefone:</span> (00) 0000-0000</h4>
-            </div>
+      <div class="single-contact">
+        <div class="information text-center">
+          <h4><span>Telefone:</span> (00) 0000-0000</h4>
         </div>
-        <div class="single-contact">
-            <div class="information text-center">
-                <h4><span>E-mail:</span> cafe@nocturne.com</h4>
-            </div>
+      </div>
+      <div class="single-contact">
+        <div class="information text-center">
+          <h4><span>E-mail:</span> cafe@nocturne.com</h4>
         </div>
-        <div class="single-contact">
-            <div class="information text-center">
-                <h4><span>Endereço:</span> Rua das Ruas Nº Rua, Rua</h4>
-            </div>
+      </div>
+      <div class="single-contact">
+        <div class="information text-center">
+          <h4><span>Endereço:</span> Rua das Ruas Nº Rua, Rua</h4>
         </div>
-        <div class="single-contact">
-            <div class="information text-center">
-                <h4><span>Funcionamento:</span> 14:00 hs às 22:00</h4>
-            </div>
+      </div>
+      <div class="single-contact">
+        <div class="information text-center">
+          <h4><span>Funcionamento:</span> 14:00 hs às 22:00</h4>
         </div>
+      </div>
     </section>
 
     <section class="about-area pt-70 pb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="about-text">
-                        <h3>Nome do produto</h3>
-                        <p>Descrição do produto em promoção</p>
-                        <a href="#" class="default-btn">
-                            <span>Visualizar</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 hidden-xs">
-                    <div class="about-image">
-                        <img src="" alt="">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="about-text">
+              <h3>Nome do produto</h3>
+              <p>Descrição do produto em promoção</p>
+              <a href="#" class="default-btn">
+                <span>Visualizar</span>
+              </a>
             </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 hidden-xs">
+            <div class="about-image">
+              <img src="img\banner\1.png" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="booking-area ptb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="section-title text-center">
-                        <h1>Agendamento</h1>
-                        <span><img src="" alt=""></span>
-                        <p>Faça Seu Agendamento...</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="section-title text-center">
+              <h1>Agendamento</h1>
+              <span><img src="" alt="" /></span>
+              <p>Faça Seu Agendamento...</p>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="container">
-            <div class="booking-form">
-                <form action="#">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <input type="text" placeholder="Nome" name="nome">
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <input type="tel" placeholder="Telefone" name="telefone">
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <input type="email" placeholder="E-mail" name="email">
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <input type="text" placeholder="Endereço" name="endereco">
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <input type="date" placeholder="Data de Entrega" name="data">
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <input type="time" placeholder="Horário" name="horas">
-                        </div>
-                        <div class="col-md-12 text-center fix">
-                            <button class="default-btn" type="submit">
-                                <span>Enviar Solicitação</span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+      <div class="container">
+        <div class="booking-form">
+          <form action="#">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <input type="text" placeholder="Nome" name="nome" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <input type="tel" placeholder="Telefone" name="telefone" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <input type="email" placeholder="E-mail" name="email" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <input type="text" placeholder="Endereço" name="endereco" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <input type="date" placeholder="Data de Entrega" name="data" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <input type="time" placeholder="Horário" name="horas" />
+              </div>
+              <div class="col-md-12 text-center fix">
+                <button class="default-btn" type="submit">
+                  <span>Enviar Solicitação</span>
+                </button>
+              </div>
             </div>
+          </form>
         </div>
+      </div>
     </section>
 
     <section class="client-area bg-2 overlay-1 ptb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="testimonial-carousel">
-                        <div class="single-testimonial text-center">
-                            <p>Avaliação 01</p>
-                            <div class="client-rating">
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start-half"></i>
-                            </div>
-                            <h4>
-                                <a href="#">George Bush</a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="testimonial-carousel">
-                            <div class="single-testimonial text-center">
-                                <p>Avaliação 02</p>
-                                <div class="client-rating">
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start-half"></i>
-                                </div>
-                                <h4>
-                                    <a href="#">Anon Nimo</a>
-                                </h4>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="testimonial-carousel">
-                            <div class="single-testimonial text-center">
-                                <p>Avaliação 03</p>
-                                <div class="client-rating">
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start-half"></i>
-                                </div>
-                                <h4>
-                                    <a href="#">Não Sei</a>
-                                </h4>
-                                     
-                            </div>
-                        </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="testimonial-carousel">
-                            <div class="single-testimonial text-center">
-                                <p>Avaliação 04</p>
-                                <div class="client-rating">
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start"></i>
-                                    <i class="zmdi zmdi-start-half"></i>
-                                </div>
-                                <h4>
-                                    <a href="#">Não Sei</a>
-                                </h4>
-                                         
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="testimonial-carousel">
-                                <div class="single-testimonial text-center">
-                                    <p>Avaliação 05</p>
-                                    <div class="client-rating">
-                                        <i class="zmdi zmdi-start"></i>
-                                        <i class="zmdi zmdi-start"></i>
-                                        <i class="zmdi zmdi-start"></i>
-                                        <i class="zmdi zmdi-start"></i>
-                                        <i class="zmdi zmdi-start-half"></i>
-                                    </div>
-                                    <h4>
-                                        <a href="#">Não Sei</a>
-                                    </h4>
-                                </div>
-                            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="testimonial-carousel">
+              <div class="single-testimonial text-center">
+                <img src="img/client1.jpg" alt="Cliente 1" class="client-img" />
+                <p>Avaliação 01</p>
+                <div class="client-rating">
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star-half"></i>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="single-client-container">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4">
-                                <a href="#" class="single-client">
-                                    <span class="client-table-cell">
-                                        <img src="" alt="">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <a href="#" class="single-client">
-                                    <span class="client-table-cell">
-                                        <img src="" alt="">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <a href="#" class="single-client">
-                                    <span class="client-table-cell">
-                                        <img src="" alt="">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <a href="#" class="single-client">
-                                    <span class="client-table-cell">
-                                        <img src="" alt="">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <a href="#" class="single-client">
-                                    <span class="client-table-cell">
-                                        <img src="" alt="">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <a href="#" class="single-client">
-                                    <span class="client-table-cell">
-                                        <img src="" alt="">
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h4>
+                  <a href="#">George Bush</a>
+                </h4>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="testimonial-carousel">
+              <div class="single-testimonial text-center">
+                <img src="img/client2.jpg" alt="Cliente 2" class="client-img" />
+                <p>Avaliação 02</p>
+                <div class="client-rating">
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star-half"></i>
+                </div>
+                <h4>
+                  <a href="#">Willian</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="testimonial-carousel">
+              <div class="single-testimonial text-center">
+                <img src="img/client3.jpg" alt="Cliente 3" class="client-img" />
+                <p>Avaliação 03</p>
+                <div class="client-rating">
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star-half"></i>
+                </div>
+                <h4>
+                  <a href="#">Michel</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="testimonial-carousel">
+              <div class="single-testimonial text-center">
+                <img src="img/client4.jpg" alt="Cliente 4" class="client-img" />
+                <p>Avaliação 04</p>
+                <div class="client-rating">
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star-half"></i>
+                </div>
+                <h4>
+                  <a href="#">Michele</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="testimonial-carousel">
+              <div class="single-testimonial text-center">
+                <img src="img/client5.jpg" alt="Cliente 5" class="client-img" />
+                <p>Avaliação 05</p>
+                <div class="client-rating">
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star"></i>
+                  <i class="zmdi zmdi-star-half"></i>
+                </div>
+                <h4>
+                  <a href="#">Eduardo</a>
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="footer-area">
-        <div class="footer-widget-area bg-3 overlay-2 pt-100 pb-85 fix">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-footer-widget">
-                        <h3>Sobre</h3>
-                        <p class="margin">
-                            Texto sobre o café
-                        </p>
-                    </div>
-                </div>
-                    <div class="col-lg-3 col-md-4 hidden-sm col-xs-12">
-                        <div class="single-footer-widget">
-                            <h3>Contato</h3>
-                            <span class="c-info"><i class="zmdi zmdi-email"></i>cafe@nocturne.com</span>
-                            <span class="c-info"><i class="zmdi zmdi-phone"></i>(00) 0000-0000</span>
-                            <span class="c-info"><i class="zmdi zmdi-home"></i>Rua das Ruas Nº Rua, Rua</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 hidden-sm col-xs-12">
-                        <div class="single-footer-widget">
-                            <h3>Funcionamento</h3>
-                            <p>Veja os horarios de funcionamento abaixo</p>
-                            <span class="open-time">Segunda - Sexta ...... 14:00 às 22:00</span>
-                            <span class="open-time">Sábado ............... 14:00 às 22:00</span>
-                            <span class="open-time">Domingo .............. Fechado</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 hidden-sm col-xs-12">
-                        <div class="single-footer-widget">
-                            <h3>Boletim</h3>
-                            <div class="newletter-form">
-                                <form action="#" id="mc-form" class="mc-form-fix">
-                                    <input type="email" id="mc-email" placeholder="Digite seu e-mail">
-                                    <button type="submit" id="mc-submit" class="default-br">
-                                        <span>Enviar</span>
-                                    </button>
-                                </form>
-                                <div class="mailchimp-alerts">
-                                    <div class="mailchimp-submitting"></div>
-                                    <div class="mailchimp-success"></div>
-                                    <div class="mailchimp-error"></div>
-                                </div>
-                            </div>
-                            <div class="footer-links">
-                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                                <a href="#"><i class="zmdi zmdi-x"></i></a>
-                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="#"><i class="zmdi zmdi-whatsapp"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="footer-widget-area bg-3 overlay-2 pt-100 pb-85 fix">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="single-footer-widget">
+                <h3>Sobre</h3>
+                <p class="margin">Texto sobre o café</p>
+              </div>
             </div>
-            <div class="footer-text-area fix bg-koffee ptb-20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="footer-text text-center">
-                                <span>&copy; <a href="#"></a> 2025. Todos os direitos Reservados. </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-3 col-md-4 hidden-sm col-xs-12">
+              <div class="single-footer-widget">
+                <h3>Contato</h3>
+                <span class="c-info"
+                  ><i class="zmdi zmdi-email"></i>cafe@nocturne.com</span
+                >
+                <span class="c-info"
+                  ><i class="zmdi zmdi-phone"></i>(00) 0000-0000</span
+                >
+                <span class="c-info"
+                  ><i class="zmdi zmdi-home"></i>Rua das Ruas Nº Rua, Rua</span
+                >
+              </div>
             </div>
-    </section>    
+            <div class="col-lg-3 col-md-4 hidden-sm col-xs-12">
+              <div class="single-footer-widget">
+                <h3>Funcionamento</h3>
+                <p>Veja os horários de funcionamento abaixo</p>
+                <span class="open-time"
+                  >Segunda - Sexta ...... 14:00 às 22:00</span
+                >
+                <span class="open-time"
+                  >Sábado ............... 14:00 às 22:00</span
+                >
+                <span class="open-time">Domingo .............. Fechado</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 hidden-sm col-xs-12">
+              <div class="single-footer-widget">
+                <h3>Boletim</h3>
+                <div class="newletter-form">
+                  <form action="#" id="mc-form" class="mc-form-fix">
+                    <input
+                      type="email"
+                      id="mc-email"
+                      placeholder="Digite seu e-mail"
+                    />
+                    <button type="submit" id="mc-submit" class="default-btn">
+                      <span>Enviar</span>
+                    </button>
+                  </form>
+                  <div class="mailchimp-alerts">
+                    <div class="mailchimp-submitting"></div>
+                    <div class="mailchimp-success"></div>
+                    <div class="mailchimp-error"></div>
+                  </div>
+                </div>
+                <div class="footer-links">
+                  <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                  <a href="#"><i class="zmdi zmdi-x"></i></a>
+                  <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                  <a href="#"><i class="zmdi zmdi-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text-area fix bg-koffe ptb-20">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer-text text-center">
+                <span
+                  >&copy; 2025. Todos os direitos Reservados
+                  <a href="secret.html" class="secret">.</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 
-</body>
+  <!-- jQuery -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha384-+6Z2"
+    crossorigin="anonymous"
+  />
+
+  <script>
+    document
+      .querySelector(".secret")
+      .addEventListener("click", function (event) {});
+  </script>
 </html>
